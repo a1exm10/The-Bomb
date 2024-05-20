@@ -1,15 +1,16 @@
-let count = 0;
-const countElement = document.getElementById('count');
 
-function incrementCount() {
-    if (count < 100) {
-        count++;
-        countElement.textContent = count;
-        setTimeout(incrementCount, 1); // Adjust the delay between increments (in milliseconds)
-    } else {
-        // Redirect to another HTML page when count reaches 100
-        window.location.href = 'finale.html'; // Replace 'anotherpage.html' with the desired file name
-    }
+
+
+let count = 0;
+const counterElement = document.getElementById('counter');
+
+// Adjustable interval in milliseconds
+let interval = 1000; // Change this value to adjust the rate (1000ms = 1 second)
+
+function updateCounter() {
+    count++;
+    counterElement.textContent = count;
 }
 
-incrementCount();
+// Start the counter
+setInterval(updateCounter, interval);
