@@ -159,14 +159,14 @@ h1 {
 }
 
 .rcontainer {
-  width: 200px;
+  width: 150px;
   height: 50px;
-  padding: 5px;
+  padding: 1px;
   display: flex;
   justify-content: left;
   align-items: center;
   position: fixed;
-  top: 5px;
+  top: 3px;
   right: 1px;
   color: #BABA46
   font-size: 8px
