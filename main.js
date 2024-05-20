@@ -5,7 +5,7 @@ function incrementCount() {
     if (count < 100) {
         count++;
         countElement.innerHTML = `<span id="count">${count}</span>`;
-        setTimeout(incrementCount, 50); // Adjust the delay between increments (in milliseconds)
+        setTimeout(incrementCount, 1000); // Adjust the delay between increments (in milliseconds)
     } else {
         // Redirect to another page when the count reaches 100
         window.location.href = 'anotherpage.html'; // Replace 'anotherpage.html' with the desired file name
