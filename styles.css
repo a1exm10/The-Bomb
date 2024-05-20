@@ -22,7 +22,7 @@ body {
 			float: right;
 			max-width: 300px; /* Adjust the maximum width as needed */
 			max-height: 250px;
-      animation: fadeIn 2s ease-in-out, pulse 2s infinite;/* Adjust the maximum height as needed */
+      animation: pulse 10s infinite;/* Adjust the maximum height as needed */
 		}
 	</style>
 </head>
@@ -45,7 +45,7 @@ body {
     float: left;
     max-width: 300px; /* Adjust the maximum width as needed */
     max-height: 150px;
-    animation: fadeIn 2s ease-in-out, pulse 2s infinite; /* Adjust the maximum height as needed */
+    animation: pulse 10s infinite; /* Adjust the maximum height as needed */
   }
 </style>
 
@@ -66,7 +66,7 @@ body {
     float: right;
     max-width: 300px; /* Adjust the maximum width as needed */
     max-height: 150px;
-    animation: fadeIn 2s ease-in-out, pulse 2s infinite;
+    animation: pulse 10s infinite;
        /* Adjust the maximum height as needed */
   }
 </style>
@@ -88,7 +88,7 @@ body {
     float: left;
     max-width: 300px; /* Adjust the maximum width as needed */
     max-height: 150px;
-    animation: fadeIn 2s ease-in-out, pulse 2s infinite; /* Adjust the maximum height as needed */
+    animation: pulse 10s infinite; /* Adjust the maximum height as needed */
   }
 </style>
 
