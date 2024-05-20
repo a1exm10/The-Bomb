@@ -171,3 +171,31 @@ h1 {
   color: #BABA46
   font-size: 8px
 }
+
+.container4 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+}
+
+.counter-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.counter-image {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 10px;
+}
+
+#count {
+    font-size: 24px;
+    font-weight: bold;
+}
