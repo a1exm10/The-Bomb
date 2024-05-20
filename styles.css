@@ -177,7 +177,6 @@ h1 {
     height: 50px
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 3px;
     right: 3px;
