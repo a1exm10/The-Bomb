@@ -1,0 +1,154 @@
+
+body {
+    font-family: sans-serif;
+}
+
+<head>
+	<title>Image in Top-Right Corner</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.top-right-container {
+			position: fixed;
+      right: 300px;
+      top: 125px;
+			height: 300px; /* Adjust the height as needed */
+		}
+
+		.top-right-image {
+			float: right;
+			max-width: 300px; /* Adjust the maximum width as needed */
+			max-height: 250px; /* Adjust the maximum height as needed */
+		}
+	</style>
+</head>
+<body>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-left-container {
+    position: fixed;
+    left: 300px;
+    top: 125px;
+    height: 300px; /* Adjust the height as needed */
+  }
+
+  .top-left-image {
+    float: left;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    max-height: 150px; /* Adjust the maximum height as needed */
+  }
+</style>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .bottom-right-container {
+    position: fixed;
+    right: 300px;
+    bottom: 125px;
+    height: 250px; /* Adjust the height as needed */
+  }
+
+  .bottom-right-image {
+    float: right;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    max-height: 150px; /* Adjust the maximum height as needed */
+  }
+</style>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .bottom-left-container {
+    position: fixed;
+    left: 300px;
+    bottom: 50px;
+    height: 250px; /* Adjust the height as needed */
+  }
+
+  .bottom-left-image {
+    float: left;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    max-height: 150px; /* Adjust the maximum height as needed */
+  }
+</style>
+
+h1 {
+  color: white
+}
+
+.container {
+    width: 700px;
+    height: 130px;
+    background-color: #A89FC3;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    left: 400px;
+		font-size: 18px
+}
+
+.container-link {
+    position: absolute;
+    top: 200px;
+    left: 500px;
+}
+
+.container2 {
+    width: 80px;
+    height: 50px;
+    background-color: #4b56a9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    left: 700px;
+}
+
+.button {
+    display: inline-block;
+    padding: 3px 3px;
+    background-color: #5e69b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #4b56a9;
+}
+
+.container3 {
+    width: 600px;
+    height: 100px;
+    background-color: #6ea1a9;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 250px;
+    left: 450px;
+		font-size: 17px
+}
