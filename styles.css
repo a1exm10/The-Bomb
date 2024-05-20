@@ -173,12 +173,16 @@ h1 {
 }
 
 .container4 {
-    max-width: 100px;
+    width: 150px;
+    height: 50px
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: fixed;
+    top: 3px;
+    right: 3px;
+    font-size: 8px
 }
 
 .counter-container {
