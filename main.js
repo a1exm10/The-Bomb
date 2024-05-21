@@ -2,7 +2,7 @@ let count = 0;
 const countElement = document.querySelector('#count-number');
 
 function incrementCount() {
-    if (count < 100) {
+    if (count-number < 100) {
         count++;
         countElement.innerHTML = `<span id="count">${count}</span>`;
         setTimeout(incrementCount, 50); // Adjust the delay between increments (in milliseconds)
