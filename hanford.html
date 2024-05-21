@@ -86,26 +86,29 @@ body {
 
 
 
-    <script>
-        let count = 0;
-        const counterElement = document.getElementById('counter');
+  <input id="counter" type="number" value="0" step="1" readonly>
+   <script>
+       window.onload = function() {
+           let count = 0;
+           const counterElement = document.getElementById('counter');
 
-        // Adjustable interval in milliseconds
-        let interval = 1000; // Change this value to adjust the rate (1000ms = 1 second)
+           // Adjustable interval in milliseconds
+           let interval = 1000; // Change this value to adjust the rate (1000ms = 1 second)
 
-        function updateCounter() {
-            if (count < 100) {
-                count++;
-                counterElement.textContent = count;
-            } else {
-                clearInterval(counterInterval); // Stop the interval when count reaches 100
-                window.location.href = 'finale.html'; // Redirect to another page
-            }
-        }
+           function updateCounter() {
+               if (count < 100) {
+                   count++;
+                   counterElement.value = count;
+               } else {
+                   clearInterval(counterInterval); // Stop the interval when count reaches 100
+                   window.location.href = 'anotherpage.html'; // Redirect to another page
+               }
+           }
 
-        // Start the counter
-        const counterInterval = setInterval(0, 100);
-    </script>
+           // Start the counter
+           const counterInterval = setInterval(updateCounter, interval);
+       };
+   </script>
 
     <div class="counter-container">
       <img src="radiation2.png" alt="Counter Image" class="counter-image">
