@@ -1,5 +1,5 @@
 let count = 0;
-const countElement = document.querySelector('.container4');
+const countElement = document.querySelector('#count-number');
 
 function incrementCount() {
     if (count < 100) {
