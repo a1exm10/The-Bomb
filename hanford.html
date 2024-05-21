@@ -160,8 +160,29 @@ body {
 
 
 
-       <div class="counter-container">
-           <img src="radiation2.png" alt="Counter Image" class="counter-image">
-      <span id="count-number">0</span>
-   <script src="main.js"></script>
-   </div>
+
+   <body>
+<div class="counter-container">
+  <img src="radiation2.png" alt="Counter Image" class="counter-image">
+    <div id="counter">0</div>
+    <script>
+        let count = 0;
+        const counterElement = document.getElementById('counter');
+
+        // Adjustable interval in milliseconds
+        let interval = 1000; // Change this value to adjust the rate (1000ms = 1 second)
+
+        function updateCounter() {
+            if (count < 100) {
+                count++;
+                counterElement.textContent = count;
+            } else {
+                clearInterval(counterInterval); // Stop the interval when count reaches 100
+                window.location.href = 'finale.html'; // Redirect to another page
+            }
+        }
+
+        // Start the counter
+        const counterInterval = setInterval(updateCounter, interval);
+    </script>
+</body>
