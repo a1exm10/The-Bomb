@@ -118,7 +118,7 @@
                   const counterContainer = document.getElementById('counterContainer');
 
                   // Adjustable interval in milliseconds
-                  let interval = 1000; // Change this value to adjust the rate (1000ms = 1 second)
+                  let interval = 2000; // Change this value to adjust the rate (1000ms = 1 second)
 
                   function updateCounter() {
                       if (count < 100) {
@@ -126,7 +126,7 @@
                           counterContainer.textContent = count;
                       } else {
                           clearInterval(counterInterval); // Stop the interval when count reaches 100
-                          window.location.href = 'anotherpage.html'; // Redirect to another page
+                          window.location.href = 'finale.html'; // Redirect to another page
                       }
                   }
 
