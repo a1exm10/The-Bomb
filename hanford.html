@@ -98,7 +98,7 @@ body {
            function updateCounter() {
                if (count < 100) {
                    count++;
-                   counterElement.value = count;
+                   counterContainer.textContent = count.toString();
                } else {
                    clearInterval(counterInterval); // Stop the interval when count reaches 100
                    window.location.href = 'anotherpage.html'; // Redirect to another page
