@@ -91,7 +91,7 @@ body {
         const counterElement = document.getElementById('counter');
 
         // Adjustable interval in milliseconds
-        let interval = 1; // Change this value to adjust the rate (1000ms = 1 second)
+        let interval = 1000; // Change this value to adjust the rate (1000ms = 1 second)
 
         function updateCounter() {
             if (count < 100) {
@@ -104,7 +104,7 @@ body {
         }
 
         // Start the counter
-        const counterInterval = setInterval(updateCounter, interval);
+        const counterInterval = setInterval(updateCounter, 1000);
     </script>
 
     <div class="counter-container">
