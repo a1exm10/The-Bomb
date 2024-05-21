@@ -3,11 +3,20 @@
 <script src="main.js"></script>
 
 
+  <style>
+
+    body {
+      background-color: #49545e;
+      color: #1A262F;
+      font-size: 50px;
+      line-height: 25px;
+      word-wrap: anywhere;
+      font-family: Monospace
+    }
+      </style>
+
 <style>
-body {
-  margin: 0;
-  padding: 0;
-}
+
 
 .bottom-right-container {
   position: fixed;
@@ -22,13 +31,6 @@ body {
   max-width: 300px; /* Adjust the maximum width as needed */
   max-height: 300px;
   animation: pulse 10s infinite; /* Adjust the maximum height as needed */
-}
-</style>
-
-<style>
-body {
-  margin: 0;
-  padding: 0;
 }
 
 .bottom-left-container {
@@ -46,21 +48,6 @@ body {
   animation: pulse 10s infinite; /* Adjust the maximum height as needed */
 }
 </style>
-
-
-  <script src="main.js"></script>
-
-  <style>
-
-    body {
-      background-color: #49545e;
-      color: #1A262F;
-      font-size: 50px;
-      line-height: 25px;
-      word-wrap: anywhere;
-      font-family: Monospace
-    }
-      </style>
 
 
   <h1>
@@ -86,7 +73,7 @@ body {
 
 
 
-<div id="counter-container"></div>
+  <input id="counter" type="number" value="0" step="1" readonly>
    <script>
        window.onload = function() {
            let count = 0;
@@ -98,7 +85,7 @@ body {
            function updateCounter() {
                if (count < 100) {
                    count++;
-                   counterContainer.textContent = count.toString();
+                   counterElement.value = count;
                } else {
                    clearInterval(counterInterval); // Stop the interval when count reaches 100
                    window.location.href = 'anotherpage.html'; // Redirect to another page
@@ -113,3 +100,63 @@ body {
     <div class="counter-container">
       <img src="radiation2.png" alt="Counter Image" class="counter-image">
         <div id="counter">0</div>
+
+
+
+
+        <style>
+              body {
+                  margin: 0;
+                  padding: 0;
+                  height: 100vh;
+                  position: relative;
+              }
+
+              #counterContainer {
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  margin: 20px;
+                  font-size: 24px;
+                  font-weight: bold;
+              }
+
+              #selectedImageContainer {
+                  position: relative;
+                  display: inline-block;
+              }
+
+              #selectedImage {
+                  width: 200px; /* Adjust as per your image size */
+                  height: auto; /* To maintain aspect ratio */
+              }
+          </style>
+
+      <body>
+          <div id="counterContainer">0</div>
+          <div id="selectedImageContainer">
+              <img id="selectedImage" src="path/to/your/image.jpg" alt="Selected Image">
+          </div>
+          <script>
+              window.onload = function() {
+                  let count = 0;
+                  const counterContainer = document.getElementById('counterContainer');
+
+                  // Adjustable interval in milliseconds
+                  let interval = 1000; // Change this value to adjust the rate (1000ms = 1 second)
+
+                  function updateCounter() {
+                      if (count < 100) {
+                          count++;
+                          counterContainer.textContent = count;
+                      } else {
+                          clearInterval(counterInterval); // Stop the interval when count reaches 100
+                          window.location.href = 'anotherpage.html'; // Redirect to another page
+                      }
+                  }
+
+                  // Start the counter
+                  const counterInterval = setInterval(updateCounter, interval);
+              };
+          </script>
+      </body>
