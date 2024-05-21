@@ -137,6 +137,27 @@ body {
      		}
      	</style>
 
+
+<style>
+      .text {
+          position: absolute;
+          top: 0;
+          right: -100%; /* Initially, place the text outside the container */
+          animation: slideIn 2s forwards; /* Use the slideIn animation for 2 seconds */
+      }
+
+      @keyframes slideIn {
+          from {
+              right: -100%; /* Start position */
+          }
+          to {
+              right: 0; /* End position */
+          }
+      }
+
+</style>
+
+
   <h1>
     <br>
     <br>
