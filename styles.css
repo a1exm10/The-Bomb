@@ -123,6 +123,7 @@ h1 {
     top: 200px;
     left: 500px;
 		font-size: 20px;
+    line-height: 15px;
 }
 
 
@@ -151,7 +152,7 @@ h1 {
 .button {
     display: inline-block;
     padding: 3px 3px;
-    background-color: #3E3F10;
+    background-color: #134F5C;
     color: white;
     text-decoration: none;
     border-radius: 2px;
