@@ -212,13 +212,13 @@ h1 {
 }
 
 .container5 {
-  width: 2oopx;
-  hegith: 150px;
+  width: 25opx;
+  hegith: 200px;
   justify-content: center;
   alighn-items: center;
   position: absolute;
-  bottom: 150px;
-  right: 420px;
-  font-size: 10px
+  bottom: 200px;
+  right: 550px;
+  font-size: 14px
 
 }
