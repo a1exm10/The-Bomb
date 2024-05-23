@@ -157,20 +157,9 @@ body {
          </div>
      </body>
 
-     <body>
-         <div class="container3">
-           <p>Average age of Manhattan Project workers: 25 <br>
-             Average age of Hanford worker: 30<br>
-             Average age at Oak Ridge: 27 <br>
-             Average age of army solider <br>:
-             Enrico Fermi age of death: 53 <br>
-             Robert Oppenheimer age at death: 62 <br>
-             Leo Slizard age at death: 66 <br>
 
-
-           </p>
            <h3>All roads lead to back to the atom</h3>
-         </div>
+
      </body>
 
 
@@ -188,3 +177,51 @@ body {
       <h3> All roads lead back to the atom </h3>
 
      </div>
+
+
+
+     <title>Disappearing Text</title>
+        <style>
+            .text-container {
+                font-size: 14px;
+                text-align: center;
+                margin-top: 50px;
+                bottom: 200px;
+                right: 400px;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    <body>
+        <div class="text-container" id="disappearingText">
+          <p>
+            Average age of Manhattan Project workers: 25 <br>
+            Average age of Hanford worker: 30<br>
+            Average age at Oak Ridge: 27 <br>
+            Average age of army solider <br>:
+            Enrico Fermi age of death: 53 <br>
+            Robert Oppenheimer age at death: 62 <br>
+            Leo Slizard age at death: 66 <br>
+          </p> <br>
+             <h3>All roads lead to back to the atom</h3>
+        <script src="script.js"></script>
+    </body>
+
+<script>
+    const textContainer = document.getElementById('disappearingText');
+    const initialText = textContainer.textContent;
+    let remainingText = initialText;
+
+    function removeOneCharacter() {
+        if (remainingText.length > 0) {
+            remainingText = remainingText.slice(0, -1); // Remove the last character
+            textContainer.textContent = remainingText;
+            setTimeout(removeOneCharacter, 1000); // Adjust the delay between character removals (in milliseconds)
+        } else {
+            // Text has completely disappeared
+            // You can add any additional functionality here
+        }
+    }
+
+    removeOneCharacter();
+</script>
