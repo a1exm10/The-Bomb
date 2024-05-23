@@ -5,10 +5,103 @@
 
 
 
+
 <style>
   body {
-    background-color: #040d15;
-    color: white
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-right-container {
+    position: fixed;
+    right: 275px;
+    top: 30px;
+    height: 420px; /* Adjust the height as needed */
+  }
+
+  .top-right-image {
+    float: right;
+    max-width: 470px; /* Adjust the maximum width as needed */
+    max-height: 470px;
+    animation: pulse 10s infinite; /* Adjust the maximum height as needed */
+  }
+</style>
+</head>
+<body>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.top-left-container {
+  position: fixed;
+  left: 275px;
+  top: 30px;
+  height: 400px; /* Adjust the height as needed */
+}
+
+.top-left-image {
+  float: left;
+  max-width: 410px; /* Adjust the maximum width as needed */
+  max-height: 410px;
+  animation: pulse 10s infinite; /* Adjust the maximum height as needed */
+}
+</style>
+
+  <script src="main.js"></script>
+
+  <style>
+
+    body {
+      background-color: #14233c;
+      color: #1A262F;
+      font-size: 50px;
+      line-height: 25px;
+      word-wrap: anywhere;
+      font-family: Monospace
+    }
+      </style>
+
+     <title>Fading and Pulsing Header</title>
+     	<style>
+     		@keyframes fadeIn {
+     			0% {
+     				opacity: 0;
+     			}
+     			100% {
+     				opacity: 1;
+     			}
+     		}
+
+     		@keyframes pulse {
+     			0% {
+     				transform: scale(1);
+     			}
+     			50% {
+     				transform: scale(1.1);
+     			}
+     			100% {
+     				transform: scale(1);
+     			}
+     		}
+
+     		h1 {
+     			font-size: 2em;
+     			text-align: center;
+     			animation: fadeIn 2s ease-in-out, pulse 30s Once;
+          color: #C36627
+     		}
+     	</style>
+
+
+
+
+<style>
+  body {
+    background-color: #1E2427;
+    color: yellow
     line-height: 20px;
     word-wrap: anywhere;
     font-family: sans-serif
@@ -68,13 +161,26 @@
      <body>
          <div class="container3">
            <p>Average age of Manhattan Project workers: 25 <br>
+             Average age of Hanford worker: 30<br>
+             Average age at Oak Ridge: 27 <br>
              Average age of army solider <br>:
              Enrico Fermi age of death: 53 <br>
              Robert Oppenheimer age at death: 62 <br>
-             Groves age at death <br>
-             Average Hanford worker age of death: <br>
+             Leo Slizard age at death: 66 <br>
+
 
            </p>
-           <p>All roads lead to back to the atom</p>
+           <h3>All roads lead to back to the atom</h3>
          </div>
      </body>
+
+
+     <div class="top-right-container">
+       <img src="radiation2.png" alt="fist bump" class="top-right-image"
+            width="200px">
+     </div>
+
+     <div class="top-left-container">
+      <img src="radiation2.png" alt="ancient aliens" class="top-left-image"
+             width="200px">
+     </div>
