@@ -93,6 +93,10 @@ body {
 </style>
 
 
+h1 {
+  color: white
+}
+
 .container {
     width: 500px;
     height: 100px;
@@ -106,6 +110,8 @@ body {
     left: 500px;
 		font-size: 18px;
 }
+
+
 
 .container-link {
     position: absolute;
