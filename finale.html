@@ -5,6 +5,25 @@
 
 
 
+<script>
+    const textContainer = document.getElementById('disappearingText');
+    const initialText = textContainer.textContent;
+    let remainingText = initialText;
+
+    function removeOneCharacter() {
+        if (remainingText.length > 0) {
+            remainingText = remainingText.slice(0, -1); // Remove the last character
+            textContainer.textContent = remainingText;
+            setTimeout(removeOneCharacter, 1000); // Adjust the delay between character removals (in milliseconds)
+        } else {
+            // Text has completely disappeared
+            // You can add any additional functionality here
+        }
+    }
+
+    removeOneCharacter();
+</script>
+
 
 <style>
   body {
@@ -14,7 +33,7 @@
 
   .top-right-container {
     position: fixed;
-    right: 275px;
+    right: 200px;
     top: 30px;
     height: 420px; /* Adjust the height as needed */
   }
@@ -37,7 +56,7 @@ body {
 
 .top-left-container {
   position: fixed;
-  left: 275px;
+  left: 200px;
   top: 30px;
   height: 400px; /* Adjust the height as needed */
 }
@@ -206,22 +225,3 @@ body {
              <h3>All roads lead to back to the atom</h3>
         <script src="script.js"></script>
     </body>
-
-<script>
-    const textContainer = document.getElementById('disappearingText');
-    const initialText = textContainer.textContent;
-    let remainingText = initialText;
-
-    function removeOneCharacter() {
-        if (remainingText.length > 0) {
-            remainingText = remainingText.slice(0, -1); // Remove the last character
-            textContainer.textContent = remainingText;
-            setTimeout(removeOneCharacter, 1000); // Adjust the delay between character removals (in milliseconds)
-        } else {
-            // Text has completely disappeared
-            // You can add any additional functionality here
-        }
-    }
-
-    removeOneCharacter();
-</script>
