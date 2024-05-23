@@ -114,7 +114,7 @@ h1 {
 .container6 {
     width: 500px;
     height: 100px;
-    background-color: #3A313E;
+    background-color: #2E2731;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -229,7 +229,7 @@ h1 {
   width: 25opx;
   hegith: 200px;
   justify-content: center;
-  alighn-items: center;
+  align-items: center;
   position: absolute;
   bottom: 200px;
   right: 550px;
