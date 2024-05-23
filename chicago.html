@@ -6,7 +6,7 @@
   <style>
 
     body {
-      background-color: #49545e;
+      background-color: #7da1a8;
       color: #1A262F;
       font-size: 50px;
       line-height: 25px;
@@ -20,10 +20,10 @@
 
 .bottom-right-container {
   position: fixed;
-  right: 420px;
-  bottom: 90px;
+  right: 180px;
+  bottom: 340px;
   height: 150px;
-  font-size: 18px /* Adjust the height as needed */
+  font-size: 25px /* Adjust the height as needed */
 }
 
 .bottom-right-image {
@@ -35,10 +35,10 @@
 
 .bottom-left-container {
   position: fixed;
-  left: 280px;
-  bottom: 100px;
+  left: 60px;
+  bottom: 300px;
   height: 150px;
-  font-size: 18px /* Adjust the height as needed */
+  font-size: 25px /* Adjust the height as needed */
 }
 
 .bottom-left-image {
@@ -49,30 +49,68 @@
 }
 </style>
 
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-left-container1 {
+    position: fixed;
+    left: 710px;
+    bottom: 10px;
+    height: 100px; /* Adjust the height as needed */
+  }
+
+  .top-left-image1 {
+    float: left;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    max-height: 150px;
+    animation: pulse 10s infinite; /* Adjust the maximum height as needed */
+  }
+</style>
+
 
   <h1>
     <br>
     <br>
      <center>The Mission</center>
   </h1>
+  <h4> <center> Met Lab <center> </h4>
 
 
-  <div class="bottom-right-container"
-    <p> Name: Hanford Engineer Works <br>
-        Location: Hanford, WA  <br>
-        Personnel: 51,000 <br>
-        Objective: Classified <br>
-  </div>
-
-  <div class="bottom-left-container">
-    <p> Name: Oak Ridge: Clinton Engineer Works <br>
-        Location: Oak Ridge, TN <br>
-        Personnel: 75,000 <br>
-        Objective: Classified <br>
-  </div>
+  <div class="bottom-left-container"
+    <p> <center>
+        We've been dedicated to nuclear research even before the war
+        Our work is done under the University stadium <br>
+        We hold over 405,000 sq ft of land<br>
+        Began with a staff of only 150 <br>
+      <center> </p>
 
 
+  <div class="bottom-right-container">
+    <p> <center>
+        Our aims/methods: <br>
+        Nuclear Reactors (piles) <br>
+        Plutonium seperation <br>
+        Self-sustaining nuclear reaction <br>
+        Radiation levels may vary...<center> </p>
 
+
+  <div class="container7"
+        <p> <center>
+          SECURITY IS OUR TOP PRIORITY <br>
+          See something, say something <br>
+          We are in this war toghether <br>
+          <center>
+        </p>
+
+
+
+        <div class="top-left-container1">
+        <img src="army.png" alt="ancient aliens" class="top-left-image1"
+                width="100px">
+        </div>
 
 
 
@@ -85,7 +123,7 @@
               }
 
               #counterContainer {
-                  position: absolute;
+                  position: fixed;
                   top: 0;
                   right: 0;
                   margin: 20px;
@@ -118,7 +156,7 @@
                   const counterContainer = document.getElementById('counterContainer');
 
                   // Adjustable interval in milliseconds
-                  let interval = 500; // Change this value to adjust the rate (1000ms = 1 second)
+                  let interval = 200; // Change this value to adjust the rate (1000ms = 1 second)
 
                   function updateCounter() {
                       if (count < 100) {
