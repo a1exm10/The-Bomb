@@ -1,19 +1,18 @@
 window.onload = function() {
-const textElement = document.getElementById('rtext');
-let text = textElement.textContent;
-let index = 0;
+    const textElement = document.getElementById('rtext');
+    let text = textElement.textContent;
+    let index = 0;
 
-function removeLetter() {
-    if (index < text.length) {
-        textElement.textContent = text.slice(0, index) + text.slice(index + 1);
+    function removeLetter() {
+        if (index < text.length) {
+            textElement.textContent = text.slice(0, index) + text.slice(index + 1);
+            setTimeout(removeLetter, 1000); // Call removeLetter every second
+        }
         index++;
-        setTimeout(removeLetter, 200); // Adjust the interval as needed (200ms in this case)
     }
-}
 
-removeLetter();
+    removeLetter();
 };
-
 
 
 
